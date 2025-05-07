@@ -31,4 +31,12 @@ style = .dark
 
 let username: String
 username = "gkozl"
-  
+
+// Checkpoint 2
+
+var checkpointArray = [String]()
+checkpointArray = ["a", "b", "c", "a", "b", "c", "a", "b", "c"]
+print(checkpointArray.count)
+
+var setArray: Set<String> = Set(checkpointArray)
+print(setArray.count)
