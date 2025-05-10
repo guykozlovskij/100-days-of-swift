@@ -40,3 +40,4 @@ print(checkpointArray.count)
 
 var setArray: Set<String> = Set(checkpointArray)
 print(setArray.count)
+
