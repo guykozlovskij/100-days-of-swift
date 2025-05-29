@@ -73,3 +73,17 @@ print(multiples)
 
 // use continue when we want to skip an iteration that does not meet condition.
 // use break when you want to end once some condition is meat
+
+// Fizzbuzz ⬇️
+
+for i in 1...100 {
+    if (i.isMultiple(of: 3) && i.isMultiple(of: 5)) {
+        print("fizzbuzz")
+    } else if i.isMultiple(of: 5) {
+        print("buzz")
+    } else if i.isMultiple(of: 3) {
+        print("fizz")
+    } else {
+        print(i)
+    }
+}

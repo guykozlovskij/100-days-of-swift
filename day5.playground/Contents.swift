@@ -6,7 +6,6 @@ if score > 80 {
     print("Great Job!")
 }
 
-
 let age = 17
 
 if age >= 18 {
@@ -15,13 +14,11 @@ if age >= 18 {
     print("not of age")
 }
 
-
 let temp = 25
 
 if temp > 20 && temp < 30 {
     print("nice weather")
 }
-
 
 let userAge = 14
 let hasParentalConsent = true
@@ -29,7 +26,6 @@ let hasParentalConsent = true
 if age >= 18 || hasParentalConsent {
     print("can buy game")
 }
-
 
 enum TransportOption {
     case airplane, helicopter, bicycle, car, escooter
@@ -44,7 +40,7 @@ let transport = TransportOption.escooter
 //} else {
 //    print("scooter or car")
 //}
- 
+
 let transportToday = TransportOption.escooter
 
 switch transportToday {
