@@ -45,3 +45,11 @@ func getUserToupleDestr() -> (firstName: String, lastName: String) {
 let (firstName, lastName) = getUserToupleDestr()
 print("Name: \(firstName) \(lastName)")
 
+
+ 
+func isUpperCase(_ str: String) -> Bool {
+    str == str.uppercased()
+}
+
+let hello = "HELLO"
+print(isUpperCase(hello))
