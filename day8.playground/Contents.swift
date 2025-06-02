@@ -38,3 +38,29 @@ do {
 } catch {
     print("There was an error")
 }
+
+enum rootErrors: Error {
+    case noRoot, outOfBounds
+}
+
+func findSquareRoot(number: Int) throws -> String {
+    if number < 0 || number > 10_000 {
+        throw rootErrors.outOfBounds
+    }
+    
+    for i in 1...10_000 {
+        if i * i == number {
+            return "square root of \(number) is \(i)"
+        }
+    }
+    throw rootErrors.noRoot
+}
+
+do {
+    let result = try findSquareRoot(number: 26)
+    print(result)
+} catch rootErrors.noRoot {
+    print("no root")
+} catch rootErrors.outOfBounds {
+    print("number out of bounds")
+}
