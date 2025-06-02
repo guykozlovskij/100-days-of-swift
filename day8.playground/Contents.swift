@@ -28,14 +28,13 @@ func checkPassword(password: String) throws -> String {
     }
 }
 
-
 let string = "scfdslkgfdlkbfdvldfs;"
 
 do {
     let result = try checkPassword(password: string)
     print("Password rating: \(result)")
+} catch PasswordError.short {
+    print("way too short")
 } catch {
     print("There was an error")
 }
-
-
